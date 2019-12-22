@@ -59,7 +59,7 @@
         </header>
         
         <div class="mainBg">
-            <h2 class="purple_stroke_title">HELP</h2>
+            <h2 class="purpleStrokeTitle">HELP</h2>
             <!-- <div class="TextBox">
                 <p><span>B</span><span>l</span><span>u</span><span>n</span><span>t</span><span>™</span>
                     umbrella that works</p>
@@ -81,7 +81,7 @@
                     <section class="help_main_section">
                         <h3>HELP CENTER</h3>
                         <div>
-                            <div class="helplist cont1">
+                            <div class="helplist anir">
                                 <p class="helplist_title">Returns &amp; Refunds</p>
                                 <span></span>
                                 <ul class="helplist_list">
@@ -91,7 +91,7 @@
                                     <li>How are refunds paid?</li>
                                 </ul>
                             </div>
-                            <div class="helplist cont2">
+                            <div class="helplist anir">
                                 <p class="helplist_title">Shipping</p>
                                 <span></span>
                                 <ul class="helplist_list">
@@ -100,7 +100,7 @@
                                     <li>What Happens if My Order Doesn’t Arrive?</li>
                                 </ul>
                             </div>
-                            <div class="helplist cont3">
+                            <div class="helplist anir">
                                 <p class="helplist_title">Commonly Asked Questions</p>
                                 <span></span>
                                 <ul class="helplist_list">
@@ -111,7 +111,7 @@
                                     <li>Where are Blunt's manufactured?</li>
                                 </ul>
                             </div>
-                            <div class="helplist cont4">
+                            <div class="helplist anir">
                                 <p class="helplist_title">Legla</p>
                                 <span></span>
                                 <ul class="helplist_list">
@@ -168,38 +168,9 @@
 	<script src="../js/slick.min.js"></script>
     <script src="../js/index.js"></script>
     <script>
-        // var close_list = $('.helplist').find('li');
-        // close_list.fadeOut();
-        
         $('.helplist').click(function(){
             $(this).find('.helplist_list').stop().fadeToggle(300);
         });
-            
-        //parallax
-        var th = $(this);
-        var par1 = $('.cont1');
-        var par2 = $('.cont2');
-        var par3 = $('.cont3');
-        var par4 = $('.cont4');
-
-        //모바일 분기    
-        $(window).scroll(function () {
-            var th = $(this);
-            starAniM2(th, par1, 'AniR');
-            starAniM2(th, par2, 'AniR');
-            starAniM2(th, par3, 'AniR');
-            starAniM2(th, par4, 'AniR');
-        });
-
-        if ($(window).width() >= 768) {
-            $(window).scroll(function () {
-                var th = $(this);
-                starAni2(th, par1, 'AniR');
-                starAni2(th, par2, 'AniR');
-                starAni2(th, par3, 'AniR');
-                starAni2(th, par4, 'AniR');
-            });
-        }
     </script>
 </body>
 
