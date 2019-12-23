@@ -1657,10 +1657,6 @@ iframe {
         left:0;
         width:100%;
     }
-
-    .sub2 .flox .wraper {
-        padding-bottom: 70%;
-    }
     
     .sub2 .flox .titleBox .blunt {
         margin:0 18px 0 9%;
@@ -1689,7 +1685,7 @@ iframe {
         right:0;
     }
 
-    .sub2 .floxUm  {
+    .sub2 .floxUm {
         left:10%;
         bottom:20%;
     }
