@@ -1,4 +1,3 @@
-
 /*main menu*/
 //mobile,tablet 
 var mainMenu = $('header');
@@ -6,14 +5,15 @@ var nav = $('nav');
 var navW = $('.navWrap');
 
 $('.three_menu').click(function () {
-    navW.stop().toggleClass('open');
+    navW.stop().toggleClass('open'); //x버튼
     nav.stop().slideToggle();
 });
 
 //pc 수정
-navW.removeClass('open');
-nav.find('ul').children('li').hover(function () {
-    mainMenu.stop().addClass('open');
+navW.removeClass('open'); // x버튼
+nav.find('ul').children('li').hover(
+    function () {
+        mainMenu.stop().addClass('open');
 }, function () {
     mainMenu.stop().removeClass('open');
 });
@@ -26,7 +26,6 @@ $(window).resize(function () {
         }, function () {
             mainMenu.stop().removeClass('open');
         });
-
     } else {
         navW.removeClass('open');
         nav.slideUp('on');
@@ -42,42 +41,23 @@ function starAniVm(th, ms, vv) {
     }
 }
 
-//parallax
-var anid = $('.anid').children();
-anid.each(function(){
-    var anidContent = $(this);
-
-    $(window).scroll(function(){    
-    if ($(window).scrollTop() > anidContent.offset().top - 1000) {
-            anidContent.addClass('AniD');
+function scrollAnimation ( selector, active ){
+    var thisSelector = $(selector);
+    thisSelector.each(function(index, item){            
+        var $window = $(window);        
+        var $item = $(item);
+        var $itemChildren = $item.children();
+        // var $itemChildren = $item.children;
+        $window.scroll(function(){            
+            if($window.scrollTop() > $item.offset().top - window.innerHeight){
+                $itemChildren.addClass(active);
             } else {
-                    anidContent.removeClass('AniD');
+                $itemChildren.removeClass(active);                
             }
-    });
-});
-
-var aniu = $('.aniu').children();
-aniu.each(function(){
-        var aniuContent = $(this);
-
-        $(window).scroll(function(){    
-        if ($(window).scrollTop() > aniuContent.offset().top - 1000) {
-                aniuContent.addClass('AniU');
-                } else {
-                        aniuContent.removeClass('AniU');
-                }
         });
-});
-
-var anir = $('.anir');
-anir.each(function(){
-    var anirContent = $(this);
-
-    $(window).scroll(function(){    
-    if ($(window).scrollTop() > anirContent.offset().top - 1000) {
-            anirContent.addClass('AniR');
-            } else {
-                    anirContent.removeClass('AniR');
-            }
     });
-});
+}
+
+scrollAnimation ('.aniu', 'AniU');
+scrollAnimation ('.anid', 'AniD');
+scrollAnimation ('.anir', 'AniR');
