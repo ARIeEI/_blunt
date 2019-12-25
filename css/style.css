@@ -159,7 +159,7 @@ header {
     position:relative;
     top:0;
     left:0;
-    height:66px;
+    height:10vh;
     width:100%;
     z-index:1;
 }
@@ -238,8 +238,12 @@ button span:nth-child(2) {
     background:linear-gradient(to left, #9c60ff, #06eeff);
 }
 
-.navWrap.open .navInner ul {
+.navWrap.open .navInner {
     height:100vh;
+}
+
+.navWrap.open .navInner ul {
+    height:90vh;
 }
 
 /*nav*/
@@ -258,15 +262,9 @@ h2 {
 }
 
 .navInner {
-    height:100%;
     width:100%;
-    padding-top:66px;
+    padding-top:10vh;
     background:rgba(14,45,66,.95);
-}
-
-.navInner ul {
-    height:100%;
-    padding-bottom:150px;
 }
 
 .navInner a {
@@ -275,47 +273,38 @@ h2 {
 }
 
 .navInner ul> li {
-    position:relative;
-    width:100%;
-    padding:20px 0px;
-}
-
-.navInner ul> li:first-child {
-    padding:0 0 20px 0;
+    display:flex;
+    flex-direction:row;
+    justify-content: stretch;
+    align-items: flex-end;
+    margin-bottom: 4%;
+    height:20%;
 }
 
 .navInner ul> li> a {
-    display:inline-block;
-    position:absolute;
-    top:75px;
-    left:0;
-    width:72px;
+    width:30%;
     text-align:center;
     transform:rotate(-90deg);
 }
 
-.navInner ul> li> a:after {
+.navInner ul> li> a:before {
     content:"|";
-    margin:0 40px;
-}
-
-.navInner ul> li:first-child> a:after {
-    content:none;
+    margin:0 18%;
 }
 
 .navInner ol {
-    display:inline-block;
-    padding-left:120px;
+    width:70%;
 }
 
 .navInner ol li a {
     display:inline-block;
     overflow:hidden;
+    line-height:1.2;
 }
 
 .navInner ol li a:before {
     content:"-";
-    margin-right:50px;
+    margin-right:16px;
     color:#F6FFFF;
     font-size:2.5rem;
 }
@@ -399,7 +388,7 @@ ul.slick-dots {
     position:relative;
     top:0;
     left:0;
-    height:602px; 
+    height:90vh; 
     z-index:0;
 }
 
@@ -413,7 +402,7 @@ ul.slick-dots {
 .mainSlider {
     position:relative;
     width:100%; 
-    height:600px;
+    height:90vh;
     background:#eee no-repeat center/cover;
 }
 
@@ -841,10 +830,6 @@ footer a {
     } 
 
     /*nav*/
-    header {
-        height:102px;
-    }
-
     h1 {
         margin-left:-150px;
     }
@@ -861,45 +846,16 @@ footer a {
     button span:nth-child(2) {
         margin:8px 0;
     }
-    
-    .navInner {
-        padding-top:102px;
-    }
-    
-    .navInner ul {
-        padding-bottom:300px ;
-    }
-    
+
     .navInner a {
         font-size:3rem;
     }
-    
-    .navInner ul> li {
-        padding:10px 0px;
-    }
 
-    .navInner ul> li> a {
-        top:50px;
-        width:130px;
-    }
-    
-    .navInner ul> li> a:after {
-        margin:0 56px;
-    }
-    
-    .navInner ol {
-        padding-left:200px;
-    }
-    
     .navInner ol li a:after {
         height:6px;
     }
     
     /*mainBg*/
-    .mainBg {
-        height:922px;
-    }
-    
     .mainBg p:last-child {
         font-size:5.0rem;
         bottom:70px;
@@ -912,11 +868,6 @@ footer a {
         height:14px;
         margin:6px;
     }
-    
-    .mainSlider {
-        height:922px;
-    }
-
     /*sns*/
     .mainBg .sns {
         display:flex;
@@ -1372,43 +1323,41 @@ footer a {
     }
 
     .navInner ul {
-        padding:0 3.898% 0;
+        padding:0 4% 0;
     }
     
     .navInner ul> li {
         float:left;
-        margin:0 -2px  0;
+        margin-right:2%;
         padding:0;
         width:130px;
+        flex-direction: column;
     }
-    
-    .navInner ul> li:first-child {
-        margin-right:22px;
-    }
-    
+
     .navInner ul> li> a {
         transform:rotate(0);
-        position:static;
-        font-size:2.0rem;height: 74px;
-        width:auto;
+        font-size:2.0rem;
+        height: 74px;
+        width:100%;
         line-height:74px;
         color:#000;
+        text-align:left;
         transition:.1s;
+    }
+
+    .navInner ul> li> a:before {
+        display:none;
     }
     
     .navInner ul> li> a:hover {
         color:#2bcad6;
-        
     }
-    
-    .navInner ul> li> a:after {
-        content:none;
-    }
-    
+
     .navInner ol {
-        padding-left:0;
         display:none;
+        width:100%;
     }
+
     .navInner ol li {
         padding-bottom:40px;
     }
