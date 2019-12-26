@@ -2238,7 +2238,7 @@ iframe {
 
 .help_main_section> h3 {
     position:static;
-    font:2.6rem 'robotR';
+    font:2.8rem 'robotR';
     margin-bottom:6%;
 }
 .helplist {
@@ -2250,7 +2250,7 @@ iframe {
     position:relative;
     padding-left:6%;
     margin-left:2%;
-    font:1.8rem 'robotL';
+    font:2rem 'robotL';
 }
 
 .helplist p:after {
@@ -2265,7 +2265,7 @@ iframe {
     background:url(../icon/help_arrow_down.svg)no-repeat center/cover;
 }
 
-.helplist> span {
+.helplist span {
     display:block;
     margin-top: 2%;
     width:100%;
@@ -2279,7 +2279,7 @@ iframe {
 }
 
 .helplist li {
-    font:1rem 'robotL';
+    font:1.4rem 'robotL';
     padding-top:2%;
 }
 
