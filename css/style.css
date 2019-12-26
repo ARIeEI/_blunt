@@ -393,13 +393,13 @@ ul.slick-dots {
     height:90vh; 
     z-index:0;
 }
-
+/* 
 .sliderInner> div {
     position:absolute; 
     top: 0;
     width:100%;
     height:100%; 
-}
+} */
 
 .mainSlider {
     position:relative;
@@ -1325,15 +1325,16 @@ footer a {
     }
 
     .navInner ul {
+        display:inline-block;
         padding:0 4% 0;
     }
     
     .navInner ul> li {
         float:left;
-        margin-right:2%;
         padding:0;
         width:130px;
         flex-direction: column;
+        margin-bottom:0;
     }
 
     .navInner ul> li> a {
@@ -1358,6 +1359,7 @@ footer a {
     .navInner ol {
         display:none;
         width:100%;
+        padding-top: 20%;
     }
 
     .navInner ol li {
@@ -1437,10 +1439,6 @@ footer a {
     /*slide*/
     .mainSlider {
         height:900px;
-    }
-
-    .slick-arrow {
-        top:400px;
     }
 
     /*collabo*/
