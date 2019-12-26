@@ -11,7 +11,7 @@ $('.three_menu').click(function () {
 
 //pc 수정
 navW.removeClass('open'); // x버튼
-nav.find('ul').children('li').hover(
+nav.find('ul').hover(
     function () {
         mainMenu.stop().addClass('open');
 }, function () {
