@@ -352,24 +352,25 @@ h2 {
 
 .slick-arrow {
     text-indent:-9999px;
-    position:relative;
-    padding:0 2%;
+    padding:0;
+    top:auto;
+    bottom:4%;
 }
 
 .slick-prev {
-    background:url(../img/mainBg-arrow-right.png)no-repeat center/contain;
-    right:0;
-    float:right;
-}
-
-.slick-next {
     background:url(../img/mainBg-arrow-left.png)no-repeat center/contain;
     left:0;
 }
 
+.slick-next {
+    background:url(../img/mainBg-arrow-right.png)no-repeat center/contain;
+    right:0;
+    left:auto;
+}
+
 ul.slick-dots {
     position:absolute;
-    bottom:4%;
+    bottom:6%;
     width:100%;
     font-size:0;
 }
