@@ -905,9 +905,7 @@ iframe {
 }
 
 .sub2 .mainBg {
-    position:relative;
-    top:0;
-    left:0;
+    padding-bottom:100%;
 }
 
 .sub2 main > section > svg {
@@ -1032,7 +1030,7 @@ iframe {
     background:rgba(0,0,0,.95);
 }
 
-.sub2 .flox .mobile {
+.sub2 .MainBgMobile {
     width:100%;
     height:522px;
     background:url(../img/sub2-mainbg.jpg)no-repeat center/cover;
@@ -1063,7 +1061,7 @@ iframe {
     left:0;
     transform:translateY(-50%);
     width:100%;
-    height:64%;    
+    height:68%;    
     text-align:center;
     font:1.1rem 'robotR';
     background:#fff7f7;
@@ -1262,13 +1260,6 @@ iframe {
 /*collabo lte 768*/
 @media screen and (min-width:768px) {
     /*reset*/
-    .sub2 .mainBg .mainVideo {
-        display:block;
-        position:absolute;
-        width:100%;
-        height:780px;
-    }
-
     .sub2 .Text {
         padding-bottom:16%;
     }
@@ -1315,14 +1306,18 @@ iframe {
     /* mainBg */
     .sub2 .mainBg {
         height: 580px;
+        padding-bottom:0;
     }
 
     .sub2 .mainBg .mainVideo {
-        height:580px;
+        display:block;
+        position:absolute;
+        width:100%;
+        height:100%;
     }
     
     /*flox*/
-    .sub2 .flox .mobile {
+    .sub2 .MainBgMobile {
         display:none;
     }
     
@@ -1503,11 +1498,13 @@ iframe {
         left:0;
         width:100%;
     }
+
     .sub2 .flox .wraper {
         background-size:60%;
         background-position:center 70%,-40%;
         padding:0 0 8%;
     }
+    
     .sub2 .flox .titleBox .blunt {
         margin:0 18px 0 9%;
     }
@@ -2127,23 +2124,51 @@ iframe {
     height:90vh;
 }
 
-.help_page .help_img_slide {
+.help_page .mainBgBtn {
     position:absolute;
     top:0;
-    width:100%;
-    height:100%;
-    background:url('../img/blunt-slide23.jpg')no-repeat center/cover;
-    z-index:-1;
+    left:0;
+    z-index:1;
 }
 
-.help_page .help_img_slide1 {
+.help_page .TextBox {
+    position:absolute;
+}
+
+.help_page .mainBg p {
+    position: static;
+}
+
+.help_page .mainBg p:last-child span {
+    display:inline;
+}
+
+.help_page .sliderWrap {
+    /* float:left; */
+    /* position:absolute; */
+}
+
+.help_page .sliderInner {
+    width:100%;
+    height:100%;
+    float:left;
+    margin-top:-39px;
+    /* 최선..? */
+}
+
+.help_page .helpImg {
+    height:90vh;
+    background:url('../img/blunt-slide23.jpg')no-repeat center/cover;
+}
+
+.help_page .helpImgSlide1 {
     background-image:url('../img/sub3-mainBg.jpg');
 }
 
-.help_page .help_img_slide2 {
+.help_page .helpImgSlide2 {
     background-image:url('../img/sub2-flox-bg-L-m.jpg');
-
 }
+
 .help_page .help_main_section {
     width:100%;
     padding:6% 10%;
@@ -2154,6 +2179,7 @@ iframe {
     font:2.8rem 'robotR';
     margin-bottom:6%;
 }
+
 .helplist {
     cursor:pointer;
     margin-bottom: 4%;
