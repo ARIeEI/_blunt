@@ -914,18 +914,26 @@ iframe {
     opacity:.7;
 }
 
-.sub2 .Text p {
-    font:1.3rem 'robotR';
-    color:#fff;
-    width:85.6%;
-    margin:0 auto;
-    padding:18px 1.713% 23px 2.713%;
-    background:rgba(255,255,255,.2);
+.sub2 .Text {
+    position:relative;
+    top:0;
+    left:0;
+    padding-bottom: 20%;
 }
 
 
+.sub2 .Text p {
+    font:1.3rem 'robotR';
+    color:#fff;
+    width:86%;
+    margin:0 auto;
+    padding:18px 4% 23px;
+    background:rgba(255,255,255,.2);
+}
+
 .sub2 .textBoxStroke {
     position:absolute;
+    bottom:20%;
     right:2%;
     width:60px;
     height:60px;
@@ -1034,43 +1042,39 @@ iframe {
     position:relative;
     top:0;
     left:0;
-    padding-bottom:80px;
-    width:100%;
+    height:80px;
     background:#fff7f7;
 }
 
 .sub2 .flox .cont div {
-    content:"";
-    display:block;
     position:absolute;
     top:50%;
-    margin-top:-25px;
+    left:0;
+    transform:translateY(-50%);
     width:100%;
-    padding-bottom:50px;
-    background:linear-gradient(110deg, #9c60ff, #06eeff );
+    height:70%;
+    padding:0 2%;
+    background:linear-gradient(110deg, #9c60ff, #06eeff ), #fff7f7;
 }
 
 .sub2 .flox .cont p {
     position:absolute;
     top:50%;
     left:0;
-    margin:-23px auto 0;
-    padding-top:10px;
-    line-height:1.363;
+    transform:translateY(-50%);
     width:100%;
-    height:46px; 
+    height:64%;    
     text-align:center;
     font:1.1rem 'robotR';
     background:#fff7f7;
-    z-index:1;
-}
-
-.sub2 .flox .titleBox .blunt {
-    margin:0 18px 0 12%;
 }
 
 .sub2 .flox .titleBox {
     margin:30px 0 0;
+}
+
+.sub2 .flox .titleBox .blunt {
+    margin:0 18px 0 12%;
 }
 
 .sub2 .flox .titleBox .x {
@@ -1085,42 +1089,20 @@ iframe {
 }
 
 .sub2 .flox .wraper {
-    position:relative;
-    top:0;
-    left: 0;
-    width:100%;
     padding:0 0 50px;
+    background: url(../img/sub2-flox-bg-R-m.jpg)no-repeat 0 100%/contain, url(../img/sub2-flox-bg-L-m.jpg)no-repeat -60% 0/80%;
 }
 
-.sub2 .flox .floxImg:nth-child(1) {
-    background:url(../img/sub2-flox-bg-L-m.jpg)no-repeat center/cover;
-    width:270px;
-    height:349px;
-}
-
-.sub2 .flox .floxImg:nth-child(2) {
-    background:url(../img/sub2-flox-bg-R-m.jpg)no-repeat center/cover;
-    width:100%;
-    height:218px;
+.sub2 .flox .floxMainImgFloat {
+    float:right;
+    width:40%;
+    margin:10%;
 }
 
 .sub2 .flox .floxMainImg {
-    position:absolute;
-    bottom:10%;
-    right:8%;
+    width:100%;
+    padding-bottom:100%;
     background:url(../img/sub2-flox1-H.PNG)no-repeat center/cover;
-    width:50%;
-    padding-bottom:80%;
-}
-
-.sub2 .flox .Text {
-    position:absolute;
-    top:42px;
-    left:0;    
-}
-
-.sub2 .flox .textBoxStroke {
-    top:24%;
 }
 /*/flox*/
 
@@ -1180,15 +1162,6 @@ iframe {
     width:40%;
     padding-bottom:60%;
 }
-
-.sub2 .karen .textBoxStroke {
-    bottom:22%;
-}
-
-.sub2 .karen .karenBottom {
-    padding-bottom: 20%;
-}
-
 /*/karen*/
 
 /*michael*/
@@ -1199,8 +1172,9 @@ iframe {
 }
 
 .sub2 .michaelMain {
-    display: flex;
+    display:flex;
     flex-direction:row;
+    padding-bottom:20%;
 }
 
 .sub2 .michaelMainWrap {
@@ -1264,15 +1238,6 @@ iframe {
     bottom:42%;
     left:30%;
 }
-
-.sub2 .michaelBottom {
-    position:relative;
-    padding:40px 0 70px;
-}
-
-.sub2 .michaelBottom .textBoxStroke {
-    bottom:18%;
-}
 /*   /michael     */
 
 /*utube*/
@@ -1302,6 +1267,10 @@ iframe {
         position:absolute;
         width:100%;
         height:780px;
+    }
+
+    .sub2 .Text {
+        padding-bottom:16%;
     }
 
     /*um*/
@@ -1365,20 +1334,11 @@ iframe {
     }
 
     .sub2 .flox .cont {
-        padding-bottom:148px;
-    }
-    
-    .sub2 .flox .cont div {
-        padding-bottom:96px;
-        margin-top:-48px;
+        height:130px;
     }
     
     .sub2 .flox .cont p {
-        height:92px;
-        margin:-46px auto 0;
         font-size:2.2rem;
-        padding:0 6% ;
-        padding-top:1.7%;
     }
     
     .sub2 .flox .titleBox {
@@ -1392,33 +1352,15 @@ iframe {
     .sub2 .flox .titleBox h3 {
         margin:18px 0  0;
     }
-    
-    .sub2 .flox .floxImg:nth-child(1) {
-        width:625px;
-        height:766px;
-    }
-    
-    .sub2 .flox .floxImg:nth-child(2) {
-        width:724px;
-        height:434px;
-    }
-    
+
     .sub2 .flox .floxMainImg {
         transition:all .3s;
     }
     
-    .sub2 .flox .floxImg:nth-child(3):hover {
+    .sub2 .flox .floxMainImg:hover {
         background-image:url(../img/sub2-flox1.JPG);
     }
-    
-    .sub2 .flox .Text {
-        top:95px;
-    }
-    
-    .sub2 .flox .textBoxStroke {
-        top:20%;
-    }
-    
+
     /*karen*/
     .sub2 .karen {
         background-size:2106px;
@@ -1470,6 +1412,7 @@ iframe {
     .sub2 .karenUm {
         left:60%;
     }
+
     /*michael*/
     .sub2 .michael {
         background-size:449px, 652px;
@@ -1478,7 +1421,7 @@ iframe {
     
     .sub2 .michael .titleImg {
         min-width:70%;
-        padding-bottom: 70%;;
+        padding-bottom:70%;
     }
 
     .sub2 .michael .titleText {
@@ -1494,10 +1437,6 @@ iframe {
     .sub2 .michaelDesc {
         align-items:flex-end;
         justify-content:space-between;
-    }
-
-    .sub2 .michaelBottom {
-        padding:50px 0 140px;
     }
 
     /*utube*/
@@ -1557,25 +1496,18 @@ iframe {
     .sub2 .flox .pc {
         height:916px;
     }
-    
-    .sub2 .flox .cont div {
-        padding-bottom:98px;
-    }
-    
-    .sub2 .flox .cont p {
-        padding-bottom:96px;
-        line-height:96px;
-        margin:-47px auto 0;
-        padding-top:0;
-    }
-    
+
     .sub2 .flox .contWrap {
         position:relative;
         top:0;
         left:0;
         width:100%;
     }
-    
+    .sub2 .flox .wraper {
+        background-size:60%;
+        background-position:center 70%,-40%;
+        padding:0 0 8%;
+    }
     .sub2 .flox .titleBox .blunt {
         margin:0 18px 0 9%;
     }
@@ -1584,63 +1516,43 @@ iframe {
         position:absolute;
         top:0;
         left:0;
-        width:85%;
-        z-index:1;
     }
     
-    .sub2 .flox .floxImg:nth-child(1) {
-        float:left;
-        width:40%;
-        height:925px;
-        background-image:url(../img/sub2-flox-bg-L.jpg);
-    }
-    
-    .sub2 .flox .floxImg:nth-child(2) {
-        position:absolute;
-        width:66%;
-        height:749px;
-        top:90px;
-        right:0;
-    }
-
     .sub2 .floxUm {
-        left:10%;
-        bottom:20%;
-    }
-    
-    .sub2 .flox .floxMainImg {
-        right:4%;
-        width:32%;
-        padding-bottom:50%;
+        left:40%;
+        bottom:10%;
     }
     
     .sub2 .flox .InnerWrap {
-        position:relative;
-        top:0;
-        left:0;
-        width:95%;
+        float:left;
+        width:60%;
     }
     
     .sub2 .flox .Text {
-        top:232px;
-        left:86px;
-    }
-    
-    .sub2 .flox .Text p {
-        width:54.479%;
-        text-align:center;
-        padding:50px 2.968% 42px 3.3333%;
-        margin:0;
-    }
-    
-    .sub2 .flox .textBoxStroke {
-        top:385px;
-        right:36%;
+        padding-top:30%;
+        padding-left:20%;
     }
 
-    .sub2 .flox .img_btn {
-        top:570px;
-        left:30%;
+    .sub2 .flox .Text p {
+        width:90%;
+        text-align:center;
+        margin:0;
+    }
+
+    .sub2 .flox .textBoxStroke {
+        right:0;
+        bottom:10%;
+    }
+    
+    .sub2 .flox .floxMainImgFloat {
+        margin:0;
+    }
+
+    .sub2 .flox .floxMainImg {
+        width:80%;
+        margin-top:30%;
+        margin-left:10%;
+        padding-bottom:130%;
     }
     
     /*karen*/
@@ -1691,8 +1603,8 @@ iframe {
     }
     
     .sub2 .karen .Text {
-        width:53.666%;
-        margin:108px 0 0 12%;
+        width:54%;
+        margin:14% 0 0 12%;
     }
     
     .sub2 .karen .Text p {
@@ -1700,13 +1612,10 @@ iframe {
     }
     
     .sub2 .karen .textBoxStroke {
-        bottom:60%;
+        top:-10%;
+        bottom:auto;
         right:80%;
         transform:rotate(180deg);
-    }
-
-    .sub2 .karen .karenBottom {
-        padding-bottom: 10%;
     }
 
     .sub2 .karenUm {
@@ -1718,6 +1627,10 @@ iframe {
     .sub2 .michael {
         margin-top:0;
         background-size:849px,1043px;
+    }
+
+    .sub2 .michaelMain {
+        padding-bottom:10%;
     }
 
     .sub2 .michael h3 {
