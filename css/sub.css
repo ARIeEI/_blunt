@@ -928,12 +928,12 @@ iframe {
     background:#fff;
 }
 
-.sub2 .mainBg {
-    padding-bottom:100%;
-}
-
 .sub2 main > section > svg {
     opacity:.7;
+}
+
+.sub2 .mainBg {
+    height:80vh;
 }
 
 .sub2 .Text {
@@ -942,7 +942,6 @@ iframe {
     left:0;
     padding-bottom: 20%;
 }
-
 
 .sub2 .Text p {
     font:1.3rem 'robotL';
@@ -1056,7 +1055,7 @@ iframe {
 
 .sub2 .MainBgMobile {
     width:100%;
-    height:522px;
+    height:100%;
     background:url(../img/sub2-mainbg.jpg)no-repeat center/cover;
 }
 
@@ -1064,7 +1063,7 @@ iframe {
     position:relative;
     top:0;
     left:0;
-    height:80px;
+    height:10vh;
     background:#fff7f7;
 }
 
@@ -1328,11 +1327,6 @@ iframe {
     }
 
     /* mainBg */
-    .sub2 .mainBg {
-        height: 580px;
-        padding-bottom:0;
-    }
-
     .sub2 .mainBg .mainVideo {
         display:block;
         position:absolute;
@@ -1352,10 +1346,6 @@ iframe {
         height:779px;
     }
 
-    .sub2 .flox .cont {
-        height:130px;
-    }
-    
     .sub2 .flox .cont p {
         font-size:2.2rem;
     }
