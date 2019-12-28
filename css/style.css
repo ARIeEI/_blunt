@@ -64,12 +64,6 @@ h3 {
     clear:both;
 }
 
-main > section {
-    position:relative;
-    top:0;
-    left:0;
-}
-
 .purpleStrokeTitle {
     top:4%;
     right:0;
@@ -889,17 +883,12 @@ footer a {
         display:block;
         width:26px;
         height:26px;
-        margin:50px 0;
         text-indent:-9999px;
         background:url(../img/icon/sns_facebook.svg)no-repeat center/contain;
     }
-
-    .mainBg .sns a:first-child,
-    .mainBg .sns a:last-child {
-        margin:0;
-    }
     
     .mainBg .sns a:nth-child(2) {
+        margin:50px 0;
         background-image:url(../img/icon/sns_youtube.svg);
     }
     .mainBg .sns a:nth-child(3) {
