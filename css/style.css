@@ -775,7 +775,7 @@ footer .sns a {
     text-indent:-9999px;
     width:20px;
     height:20px;
-    background:url(../img/icon/sns_facebook.png)no-repeat center/contain;
+    background:url(../img/icon/sns_facebook.svg)no-repeat center/contain;
 }
 
 footer .sns a:nth-child(2) {
@@ -891,7 +891,7 @@ footer a {
         height:26px;
         margin:50px 0;
         text-indent:-9999px;
-        background:url(../img/icon/sns_facebook.png)no-repeat center/contain;
+        background:url(../img/icon/sns_facebook.svg)no-repeat center/contain;
     }
 
     .mainBg .sns a:first-child,

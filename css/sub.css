@@ -470,15 +470,15 @@ iframe {
 
     .aboutUs .mainBg .sns a {
         padding-bottom:100%;
-        background-image:url(../img/icon/sns_help_facebook.png);
+        background-image:url(../img/icon/sns_aboutus_facebook.svg);
     }
 
     .aboutUs .mainBg .sns a:nth-child(2) {
-        background-image:url(../img/icon/sns_help_youtube.svg);
+        background-image:url(../img/icon/sns_aboutus_youtube.svg);
     }
 
     .aboutUs .mainBg .sns a:nth-child(3) {
-        background-image:url(../img/icon/sns_help_instagram.svg);
+        background-image:url(../img/icon/sns_aboutus_instagram.svg);
     }
 
     /* .aboutUs main > section {
