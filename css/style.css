@@ -853,6 +853,10 @@ footer a {
         font-size:3rem;
     }
 
+    .navInner ul> li> a {
+        width:15%;
+    }
+
     .navInner ol li a:after {
         height:6px;
     }
@@ -1365,7 +1369,7 @@ footer a {
     .navInner ol li {
         padding-bottom:40px;
     }
-    
+
     .navInner ol li a {
         font-size:1.5rem;
     }
