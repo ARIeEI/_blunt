@@ -2352,6 +2352,10 @@ iframe {
         height:900px;
     }
 
+    .help_page .helpImg {
+        height:900px;
+    }
+
     .help_page .help_main_section {
         padding:6% 18%;
     }
