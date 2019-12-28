@@ -40,6 +40,10 @@ iframe {
     animation:turn 3s infinite reverse;
 }
 
+.aboutUs main > section {
+    position:static;
+}
+
 /*#mysvg*/
 .aboutUs .mysvg5, .aboutUs .mysvg6, .aboutUs .mysvg7 {
     position:absolute;
@@ -284,7 +288,8 @@ iframe {
     width:100%;
     padding-top:35px;
     margin-bottom:62px;
-    background:url(../img/sub1-product-m.jpg)no-repeat center/cover;
+    background:url(../img/blunt-slide5.jpg)no-repeat center/cover;
+    background-attachment:fixed;
 }
 
 .aboutUs .warranty .bgText p {
@@ -475,9 +480,11 @@ iframe {
     .aboutUs .mainBg .sns a:nth-child(3) {
         background-image:url(../img/icon/sns_help_instagram.svg);
     }
-    .aboutUs main > section {
+
+    /* .aboutUs main > section {
         z-index:-1;
-    }
+    } */
+
     /*circle*/
     .aboutUs .purple {
         width:280px;
@@ -603,7 +610,6 @@ iframe {
     .aboutUs .warranty .bgText {
         height:460px;
         padding-top:100px;
-        background:url(../img/sub1-product-t.jpg)no-repeat center/cover;
     }
     
     .aboutUs .warranty .bgText p:first-child {
@@ -765,6 +771,10 @@ iframe {
         top:90px;
     }
     
+    .aboutUs .warranty .bgText {
+        background-size:100%;
+    }
+
     /*product*/
     .aboutUs .product {
         padding-bottom:180px;
@@ -802,10 +812,6 @@ iframe {
     }
     
     /*warranty*/
-    .aboutUs .warranty .bgText {
-        background-image:url(../img/sub1-product.JPG);
-    }
-    
     .aboutUs .warranty .wText {
         display:flex;
         justify-content:space-between;
@@ -1775,10 +1781,11 @@ iframe {
 
 /*mail*/
 .Contact #mail .banner {
-    padding-top:34px;
-    background:url(../img/sub3-mailB.jpg)no-repeat center/cover;
     width:100%;
     height:250px;
+    padding-top:34px;
+    background:url(../img/sub3-mailB.jpg)no-repeat center/cover;
+    background-attachment:fixed;
 }
 
 .Contact #mail .banner span {
