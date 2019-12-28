@@ -71,10 +71,9 @@ main > section {
 }
 
 .purpleStrokeTitle {
-    float:right;
-    position:relative;
     top:4%;
-    left:0;
+    right:0;
+    left:auto;
     margin-right: 6%;
     color:#fff;
     font:3.0rem 'robotR';
@@ -1424,7 +1423,6 @@ footer a {
     /*mainBg*/
     .mainBg {
         height:900px;
-        position:relative;
     }
 
     .bgImage1 {
