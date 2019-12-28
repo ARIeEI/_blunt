@@ -207,10 +207,23 @@
     <script src="../js/img_slide.js"></script>
 
     <script>
+        var $all_helplist_list = $('.helplist').find('ul');
+        var $frist_list = $all_helplist_list.eq(0);
+        $frist_list.slideToggle();
+
         $('.helplist').click(function () {
-            $(this).find('.helplist_list').stop().fadeToggle(300);
+            var help_arrow = $(this).find('.help_title');
+            var helplist_list = $(this).find('.helplist_list');
+
+            $all_helplist_list.hide();
+            helplist_list.stop().fadeToggle(300);
+            // help_arrow.after(function(){
+            //     $(this).css('transform','rotate(180deg)');
+            // });
+
         });
-    </script>
+        console.log($('.helplist').find('.help_title').after());
+        </script>
 </body>
 
 </html>
