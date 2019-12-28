@@ -183,7 +183,7 @@ h1 a {
     display:block;
     height:100%; 
     width:156px;
-    background:url(../img/Blunt-Umbrellas-logo-black.png)no-repeat center/contain;
+    background:url(../img/logo/Blunt-Umbrellas-logo-black.png)no-repeat center/contain;
     z-index:2;
 }
 
@@ -216,7 +216,7 @@ button span:nth-child(2) {
 }
 
 .navWrap.open h1 a {
-    background-image:url(../img/Blunt-Umbrellas-logo-white.png);
+    background-image:url(../img/logo/Blunt-Umbrellas-logo-white.png);
 }
 
 .navWrap.open button span {
@@ -498,7 +498,7 @@ ul.slick-dots {
     display:inline-block;
     width:24px; 
     height:24px;
-    background:url(../img/eye.png)no-repeat center/contain;
+    background:url(../img/icon/eye.png)no-repeat center/contain;
 }
 
 /*flox*/
@@ -776,16 +776,16 @@ footer .sns a {
     text-indent:-9999px;
     width:20px;
     height:20px;
-    background:url(../img/facebook0icon.png)no-repeat center/contain;
+    background:url(../img/icon/sns_facebook.svg)no-repeat center/contain;
 }
 
 footer .sns a:nth-child(2) {
-    background-image:url(../img/Instagram-icon.png);
+    background-image:url(../img/icon/sns_instagram_footer.svg);
     margin:0 10px;
 }
 
 footer .sns a:nth-child(3) {
-    background-image:url(../img/Twitter-icon.png);
+    background-image:url(../img/icon/sns_youtube.svg);
 }
 
 footer a {
@@ -888,7 +888,7 @@ footer a {
         height:26px;
         margin:50px 0;
         text-indent:-9999px;
-        background:url(../img/facebook0icon.png)no-repeat center/contain;
+        background:url(../img/icon/sns_facebook.png)no-repeat center/contain;
     }
 
     .mainBg .sns a:first-child,
@@ -897,10 +897,10 @@ footer a {
     }
     
     .mainBg .sns a:nth-child(2) {
-        background-image:url(../img/Twitter-icon.png);
+        background-image:url(../img/icon/sns_youtube.svg);
     }
     .mainBg .sns a:nth-child(3) {
-        background-image:url(../img/Instagram-icon.png);
+        background-image:url(../img/icon/sns_instagram.svg);
     }
     
     /*main*/
@@ -942,7 +942,7 @@ footer a {
         height:46px;
         top:10px;
         right:15px;
-        background:url(../img/eyeC.png)no-repeat center/contain;
+        background:url(../img/icon/eyeC.png)no-repeat center/contain;
     }
     
     .img_btn .button:hover a {
@@ -952,7 +952,7 @@ footer a {
     }
     
     .img_btn .button:hover a span {
-        background:url(../img/eye.png)no-repeat center/contain;
+        background:url(../img/icon/eye.png)no-repeat center/contain;
     }
     
     /*flox*/

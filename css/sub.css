@@ -897,7 +897,7 @@ iframe {
 }
 
 .sub2 h1 a {
-    background-image:url(../img/Blunt-Umbrellas-logo-white.png);
+    background-image:url(../img/logo/Blunt-Umbrellas-logo-white.png);
 }
 
 .sub2 button span {
@@ -1877,7 +1877,7 @@ iframe {
     margin-top:-12px;
     top:50%;
     right:10px;   
-    background:url(../img/eyeC.png)no-repeat center/contain;
+    background:url(../img/icon/eyeC.png)no-repeat center/contain;
     width:24px;
     height:24px;
 }
@@ -1888,7 +1888,7 @@ iframe {
 }
 
 .Contact #mail .memo .button:hover a span {
-    background-image:url(../img/eye.png);
+    background-image:url(../img/icon/eye.png);
 }
 
 /*lte 768*/
@@ -2050,19 +2050,6 @@ iframe {
     
     .Contact .mainBg .TextBox p:nth-child(2) {
         font-size:3.0rem;
-    }
-    
-    .Contact .mainBg .sns a {
-        background-image:url(../img/facebook0icon.png);
-    }
-    
-    .Contact .mainBg .sns a:nth-child(2) {
-        background-image:url(../img/Twitter-icon.png);
-    }
-    
-    
-    .Contact .mainBg .sns a:nth-child(3) {
-        background-image:url(../img/Instagram-icon.png);
     }
     
     /*map*/
