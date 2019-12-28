@@ -992,7 +992,7 @@ iframe {
 
 .sub2 .blunt {
     float:left;
-    background:url(../img/Blunt-Umbrellas-logo-white.png)no-repeat right/contain;
+    background:url(../img/logo/Blunt-Umbrellas-logo-white.png)no-repeat right/contain;
     width:125px;
     height:49px;
 }
@@ -1472,6 +1472,8 @@ iframe {
     .sub2 .textBoxStroke {
         width:150px;
         height:150px;
+        right:0;
+        bottom:10%;
     }
     
     .sub2 .um {
@@ -1534,11 +1536,6 @@ iframe {
         width:90%;
         text-align:center;
         margin:0;
-    }
-
-    .sub2 .flox .textBoxStroke {
-        right:0;
-        bottom:10%;
     }
     
     .sub2 .flox .floxMainImgFloat {
@@ -1616,8 +1613,9 @@ iframe {
     }
 
     .sub2 .karenUm {
+        top:-20%;
         left:64%;
-        bottom:-74%;
+        bottom:auto;
     }
     
     /*michael*/
@@ -1648,10 +1646,6 @@ iframe {
         margin-right:30%;
     }
 
-    .sub2 .michaelBottom .textBoxStroke {
-        bottom:8%;
-    }
-
     .sub2 .utube iframe {
         height:970px;
     }
@@ -1667,18 +1661,6 @@ iframe {
     
     .sub2 main > section > .svgInner svg {
         position:absolute;
-    }
-}
-
-
-@media screen and (min-width: 1920px) {
-    .sub2 .flox .InnerWrap{
-        width:79.1666%;
-        margin:0 auto;
-    }
-    
-    .sub2 .titleBox {
-        width:80%;
     }
 }
 /*   /collabo     */
