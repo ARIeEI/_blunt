@@ -921,7 +921,7 @@ iframe {
 
 
 .sub2 .Text p {
-    font:1.3rem 'robotR';
+    font:1.3rem 'robotL';
     color:#fff;
     width:86%;
     margin:0 auto;
@@ -1480,6 +1480,10 @@ iframe {
         width:12%;
     }
 
+    .sub2 .Text p {
+        font-size:3rem;
+    }
+
     /* mainBg */
     .sub2 .mainBg {
         height:780px;
@@ -1544,9 +1548,9 @@ iframe {
 
     .sub2 .flox .floxMainImg {
         width:80%;
-        margin-top:30%;
+        margin-top:20%;
         margin-left:10%;
-        padding-bottom:130%;
+        padding-bottom:110%;
     }
     
     /*karen*/
@@ -1598,7 +1602,8 @@ iframe {
     
     .sub2 .karen .Text {
         width:54%;
-        margin:14% 0 0 12%;
+        margin:4% 0 0 12%;
+        padding-bottom:10%;
     }
     
     .sub2 .karen .Text p {
@@ -1607,15 +1612,15 @@ iframe {
     
     .sub2 .karen .textBoxStroke {
         top:-10%;
+        left:0;
         bottom:auto;
-        right:80%;
+        right:auto;
         transform:rotate(180deg);
     }
 
     .sub2 .karenUm {
-        top:-20%;
         left:64%;
-        bottom:auto;
+        bottom:-70%;
     }
     
     /*michael*/

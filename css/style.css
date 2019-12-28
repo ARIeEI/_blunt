@@ -358,12 +358,12 @@ h2 {
 }
 
 .slick-prev {
-    background:url(../img/mainBg-arrow-left.png)no-repeat center/contain;
+    background:url(../img/icon/mainBg-arrow-left.png)no-repeat center/contain;
     left:0;
 }
 
 .slick-next {
-    background:url(../img/mainBg-arrow-right.png)no-repeat center/contain;
+    background:url(../img/icon/mainBg-arrow-right.png)no-repeat center/contain;
     right:0;
     left:auto;
 }
