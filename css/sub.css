@@ -2116,7 +2116,9 @@ iframe {
 .help_page header {
     height:10vh;
 }
-
+.help_page .wrapSvg> svg {
+    top:920px;
+}
 .help_page .mainBg {
     position:static;
     width:100%;
@@ -2194,6 +2196,7 @@ iframe {
     height:10px;
     background:url(../img/icon/help_arrow_down.svg)no-repeat center/cover;
 }
+
 
 .helplist span {
     display:block;
@@ -2286,6 +2289,11 @@ iframe {
 }
 
 @media screen and (min-width:768px) {
+    .help_page .wrapSvg> svg {
+        top:1270px;
+        left:-240px;
+    }
+
     .help_page .TextBox {
         bottom:14%;
         right:10%;
@@ -2335,6 +2343,10 @@ iframe {
 }
 
 @media screen and (min-width:1280px) {
+    .help_page .wrapSvg> svg {
+        left:-334px;
+    }
+
     .purple_stroke_title {
         font-size:8.0rem;
     }
