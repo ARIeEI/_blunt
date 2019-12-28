@@ -398,7 +398,7 @@ iframe {
     display:inline-block;
     width:16px;
     height:16px;
-    background:url(../img/icon/sub1-slide-star.png)no-repeat center/contain;
+    background:url(../img/sub1-slide-star.png)no-repeat center/contain;
     margin:0 1px;
 }
 
@@ -1003,7 +1003,7 @@ iframe {
     width:15px;
     height:15px;
     overflow:hidden;
-    background:url(../img/icon/sub2-left-x.png)no-repeat center/contain;
+    background:url(../img/sub2-left-x.png)no-repeat center/contain;
 }
 
 .sub2 .x:before {
@@ -1011,7 +1011,7 @@ iframe {
     display:block;
     width:15px;
     height:15px;
-    background:url(../img/icon/sub2-right-x.png)no-repeat center/contain;
+    background:url(../img/sub2-right-x.png)no-repeat center/contain;
 }
 
 .sub2 .titleBox h3 {
@@ -1735,17 +1735,17 @@ iframe {
 
 .Contact #map> div:nth-of-type(2) .maptext div p {
     padding-left:56px;
-    background:url(../img/icon/sub3-map-icon1.png)no-repeat 20px 50%/17px;
+    background:url(../img/sub3-map-icon1.png)no-repeat 20px 50%/17px;
     font-size:1.1rem ;
 }
 
 .Contact #map> div:nth-of-type(2) .maptext div p:nth-child(2) {
     margin:15px 0;
-    background-image:url(../img/icon/sub3-map-icon2.png);
+    background-image:url(../img/sub3-map-icon2.png);
 }
 
 .Contact #map> div:nth-of-type(2) .maptext div p:nth-child(3) {
-    background-image:url(../img/icon/sub3-map-icon3.png);
+    background-image:url(../img/sub3-map-icon3.png);
 }
 
 .Contact #map .MAP {
