@@ -393,13 +393,6 @@ ul.slick-dots {
     height:90vh; 
     z-index:0;
 }
-/* 
-.sliderInner> div {
-    position:absolute; 
-    top: 0;
-    width:100%;
-    height:100%; 
-} */
 
 .mainSlider {
     position:relative;
@@ -409,34 +402,41 @@ ul.slick-dots {
 }
 
 .bgImage1 {
-    background-image:url(../img/mainBg.jpg);
+    background-image:url(../img/main_slide_mobile4.jpg);
 }
 
 .bgImage2 {
-    background-image:url(../img/mainBg-2.jpg);
+    background-image:url(../img/main_slide_mobile2.jpg);
 }
 
 .bgImage3 {
-    background-image:url(../img/mainBg-3.jpg);
+    background-image:url(../img/main_slide_mobile.jpg);
+
 }
 
 .bgImage4 {
-    background-image:url(../img/mainBg-4.jpg);
+    background-image:url(../img/main_slide_mobile3.jpg);
 }
 
-.mainBg p:last-child {
+.mainBg p {
+    font:2.8rem 'robotR';
+    color:#fff;
+}
+
+.mainBg span {
+    font-family:'robotl';
+    font-weight:normal;
+}
+
+.mainBg .mainSliderText {
     position:absolute;
     bottom:74px; 
     right:8%;
     line-height:1.2;
     text-align:right;
-    font:2.8rem 'robotR';
-    color:#fff;
 }
 
-.mainBg p:last-child span {
-    font-family:'robotl';
-    font-weight:normal;
+.mainBg .mainSliderText span {
     display:block;
 }
 
@@ -776,16 +776,16 @@ footer .sns a {
     text-indent:-9999px;
     width:20px;
     height:20px;
-    background:url(../img/icon/sns_facebook.svg)no-repeat center/contain;
+    background:url(../img/icon/sns_facebook.png)no-repeat center/contain;
 }
 
 footer .sns a:nth-child(2) {
-    background-image:url(../img/icon/sns_instagram_footer.svg);
+    background-image:url(../img/icon/sns_youtube.svg);
     margin:0 10px;
 }
 
 footer .sns a:nth-child(3) {
-    background-image:url(../img/icon/sns_youtube.svg);
+    background-image:url(../img/icon/sns_instagram.svg);
 }
 
 footer a {
@@ -858,7 +858,7 @@ footer a {
     }
     
     /*mainBg*/
-    .mainBg p:last-child {
+    .mainBg .mainSliderText {
         font-size:5.0rem;
         bottom:70px;
         right:14%;
@@ -1422,8 +1422,24 @@ footer a {
         height:900px;
         position:relative;
     }
-    
-    .mainBg p:last-child {
+
+    .bgImage1 {
+        background-image:url(../img/mainBg.jpg);
+    }
+
+    .bgImage2 {
+        background-image:url(../img/mainBg-2.jpg);
+    }
+
+    .bgImage3 {
+        background-image:url(../img/mainBg-3.jpg);
+    }
+
+    .bgImage4 {
+        background-image:url(../img/mainBg-4.jpg);
+    }
+
+    .mainBg .mainSliderText {
         right:14%;
     }
     

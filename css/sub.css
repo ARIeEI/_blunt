@@ -100,7 +100,7 @@ iframe {
 }
 
 .aboutUs .company .text p {
-    width:89.066%;
+    width:90%;
     margin:0 auto;
     padding:12px;
     background:rgba(255,255,255,.8);
@@ -327,11 +327,11 @@ iframe {
 
 /*product slide*/
 .aboutUs .slick-prev {
-    background:url(../img/sub1-slide-arrow-left.png)no-repeat center/contain;
+    background:url(../img/icon/sub1-slide-arrow-left.png)no-repeat center/contain;
 }
 
 .aboutUs .slick-next {
-    background-image:url(../img/sub1-slide-arrow-right.png);
+    background-image:url(../img/icon/sub1-slide-arrow-right.png);
 }
 
 .aboutUs .slick-arrow {
@@ -458,7 +458,26 @@ iframe {
         left:-241px;
         bottom:800px;
     }
-    
+        
+    .aboutUs .mainBg .sns {
+        margin-top:50%;
+    }
+
+    .aboutUs .mainBg .sns a {
+        padding-bottom:100%;
+        background-image:url(../img/icon/sns_help_facebook.png);
+    }
+
+    .aboutUs .mainBg .sns a:nth-child(2) {
+        background-image:url(../img/icon/sns_help_youtube.svg);
+    }
+
+    .aboutUs .mainBg .sns a:nth-child(3) {
+        background-image:url(../img/icon/sns_help_instagram.svg);
+    }
+    .aboutUs main > section {
+        z-index:-1;
+    }
     /*circle*/
     .aboutUs .purple {
         width:280px;
@@ -505,7 +524,7 @@ iframe {
     
     .aboutUs .company .text p {
         font-size:3.0rem;
-        width:87.369%;
+        width:88%;
     }
     
     .aboutUs .company .Bbg {
@@ -646,6 +665,10 @@ iframe {
     .aboutUs .pc {
         display:block;
     }
+
+    .aboutUs .mainBg .sns {
+        margin-top:30%;
+    }
     
     .aboutUs .wrapSvg> svg:nth-of-type(1) {
         width:481px;
@@ -680,6 +703,7 @@ iframe {
     /*company*/
     .aboutUs .company {
         margin:0 auto;
+        padding-top:8%;
     }
 
     .aboutUs .company> div {
@@ -1740,17 +1764,17 @@ iframe {
 
 .Contact #map> div:nth-of-type(2) .maptext div p {
     padding-left:56px;
-    background:url(../img/sub3-map-icon1.png)no-repeat 20px 50%/17px;
+    background:url(../img/icon/sub3-map-icon1.png)no-repeat 20px 50%/17px;
     font-size:1.1rem ;
 }
 
 .Contact #map> div:nth-of-type(2) .maptext div p:nth-child(2) {
     margin:15px 0;
-    background-image:url(../img/sub3-map-icon2.png);
+    background-image:url(../img/icon/sub3-map-icon2.png);
 }
 
 .Contact #map> div:nth-of-type(2) .maptext div p:nth-child(3) {
-    background-image:url(../img/sub3-map-icon3.png);
+    background-image:url(../img/icon/sub3-map-icon3.png);
 }
 
 .Contact #map .MAP {
@@ -1901,7 +1925,7 @@ iframe {
     }
     
     .Contact .mainBg .TextBox {
-        width:85.156%;/*654*/
+        width:86%;/*654*/
         height:430px;
         padding:44px 8.5626% 0 7.339% ;
     }
@@ -2094,32 +2118,26 @@ iframe {
 }
 
 .help_page .mainBg {
+    position:static;
     width:100%;
     height:90vh;
 }
 
 .help_page .mainBgBtn {
-    position:absolute;
+    position:relative;
     top:0;
-    left:0;
-    z-index:1;
+    right:0;
+    height:100%;
 }
 
 .help_page .TextBox {
     position:absolute;
-}
-
-.help_page .mainBg p {
-    position: static;
+    bottom:16%;
+    right:16%;
 }
 
 .help_page .mainBg p:last-child span {
     display:inline;
-}
-
-.help_page .sliderWrap {
-    /* float:left; */
-    /* position:absolute; */
 }
 
 .help_page .sliderInner {
@@ -2127,7 +2145,6 @@ iframe {
     height:100%;
     float:left;
     margin-top:-39px;
-    /* 최선..? */
 }
 
 .help_page .helpImg {
@@ -2136,7 +2153,7 @@ iframe {
 }
 
 .help_page .helpImgSlide1 {
-    background-image:url('../img/sub3-mainBg.jpg');
+    background-image:url('../img/help_img.jpg');
 }
 
 .help_page .helpImgSlide2 {
@@ -2175,7 +2192,7 @@ iframe {
     transform:translateY(-4px);
     width:10px;
     height:10px;
-    background:url(../icon/help_arrow_down.svg)no-repeat center/cover;
+    background:url(../img/icon/help_arrow_down.svg)no-repeat center/cover;
 }
 
 .helplist span {
@@ -2204,7 +2221,7 @@ iframe {
     line-height: 2;
     margin-right:2%;
     transform:translateY(-48%);
-    background:url(../img/sub1-slide-arrow-right.png)no-repeat center/cover;
+    background:url(../img/icon/sub1-slide-arrow-right.png)no-repeat center/cover;
 }
 
 .help_page .widthLogo {
@@ -2269,6 +2286,12 @@ iframe {
 }
 
 @media screen and (min-width:768px) {
+    .help_page .TextBox {
+        bottom:14%;
+        right:10%;
+        text-align:right;
+    }
+
     .help_main_section> h3 {
         margin-bottom: 4%;
         font-size:3.6rem;
@@ -2346,7 +2369,7 @@ iframe {
         width:30px;
         height:30px;
         transform:translateY(-12px);
-        background-image:url(../icon/help_arrow_downs.svg) ;
+        background-image:url(../img/icon/help_arrow_downs.svg) ;
     }
 
     .helplist ul {
