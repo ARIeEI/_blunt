@@ -1748,7 +1748,6 @@ iframe {
 /*map*/
 .Contact #map {
     background:url(../img/sub3-mapimg1.jpg)no-repeat center/cover;
-    padding:2px 0 55px;
 }
 
 .Contact #map svg {
@@ -1760,44 +1759,46 @@ iframe {
     stroke:#fff;
 }
 
-.Contact #map > div:nth-of-type(2) {
-    margin:0 auto;
-    width:87.2%;
-    height:330px;
+.Contact #map .maptextDesc {
+    padding:0 8%;
 }
 
-.Contact #map > div:nth-of-type(2) .maptext {
+.Contact #map .mapWrap .maptext {
     width:100%;
-    margin-bottom:54px;
-    padding:18px 0 21px 8.2568%;
+    padding:8%;
     font:1.5rem 'robotR';
     color:#fff;
     background:rgba(255,255,255,.2);
 }
 
-.Contact #map> div:nth-of-type(2) .maptext> p {
-    margin-bottom:10px;
+.Contact #map .mapWrap .location {
+    margin-bottom:12%;
 }
 
-.Contact #map> div:nth-of-type(2) .maptext div p {
-    padding-left:56px;
+.Contact #map .mapWrap .maptext> p {
+    margin-bottom:3%;
+}
+
+.Contact #map .mapWrap .maptext div p {
+    padding-left:16%;
     font-size:1.1rem ;
     background:url(../img/icon/sub3-map-icon1.png)no-repeat 20px 50%/17px;
 }
 
-.Contact #map> div:nth-of-type(2) .maptext div p:nth-child(2) {
-    margin:15px 0;
+.Contact #map .mapWrap .maptext div p:nth-child(2) {
+    margin:4% 0;
     background-image:url(../img/icon/sub3-map-icon2.png);
 }
 
-.Contact #map> div:nth-of-type(2) .maptext div p:nth-child(3) {
+.Contact #map .mapWrap .maptext div p:nth-child(3) {
     background-image:url(../img/icon/sub3-map-icon3.png);
 }
 
 .Contact #map .MAP {
+    margin-top:12%;
     width:100%;
     height:100vw;
-    background: url(../img/blunt-slide20.JPG);
+    background: url(../img/blunt-slide20.JPG)no-repeat center/cover;
 }
 
 /*mail*/
@@ -1975,33 +1976,17 @@ iframe {
     }
     
     /*map*/
-    .Contact #map {
-        padding:2px 0 70px;
-    }
-    
     .Contact #map svg {
         height:72px;
     }
-        
-    .Contact #map> div:nth-of-type(2) {
-        width:85.156%;/*654*/
-        height:732px;
-    }
-    
-    .Contact #map> div:nth-of-type(2) .maptext {
-        margin-bottom:108px ;
-        padding:30px 0 44px 5.504% ;
+
+    .Contact #map .mapWrap .maptext {
         font-size:3.0rem;
     }
-    
-    .Contact #map> div:nth-of-type(2) .maptext > p {
-        margin-bottom:40px;
-    }
-    
-    .Contact #map> div:nth-of-type(2) .maptext div p {
-        padding-left:72px;
+
+    .Contact #map .mapWrap .maptext div p {
         font-size:2.2rem;
-        background-size:27px;
+        background-size:5%;
     }
     
     /*mail*/
@@ -2071,7 +2056,6 @@ iframe {
     .Contact .mainWrap {
         padding-top:206px;
     }
-
     
     .Contact .mainBg .TextBox {
         margin:0;
@@ -2088,33 +2072,40 @@ iframe {
     .Contact .mainBg .TextBox p:nth-child(2) {
         font-size:3.0rem;
     }
+
+    .Contact #map svg {
+        height:140px;
+        margin-top:4%;
+        margin-bottom:4%;
+    }
     
     /*map*/
-    .Contact #map {
-        float:left;
-        padding:0;
-        width:100%;
-        height:1283px;
-    }
-
-    .Contact #map > div:nth-of-type(2) {
-        float:left;
-        width:50%;
-        height:1283px;
-        margin:0;
+    .Contact #map .mapWrap {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        padding-bottom:6%;
+        padding-left:8%;
+        padding-right:8%;
     }
     
-    .Contact #map .MAP {
-        float:right;
-        margin-top:0;
-        width:50%;
-        height:1030px;
+    .Contact #map .maptextDesc {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        max-width:50%;
+        padding:0;
+    }
+    
+    .Contact #map .mapWrap .maptext {
+        font-size:3.2rem;
     }
 
-    .Contact #map> div:nth-of-type(2) .maptext {
-        width:84.6875%;
-        margin:0 auto 225px;
-        font-size:3.2rem;
+    .Contact #map .MAP {
+        max-width:50%;
+        height:auto;
+        margin-left:6%;
+        margin-top:0;
     }
     
     .mapLocate1 {
@@ -2127,12 +2118,12 @@ iframe {
     
     /*mail*/
     .Contact #mail {
-        float:left;
+        /* float:left; */
         width:100%;
     }
     
     .Contact footer {
-        float:left;
+        /* float:left; */
         width:100%;
     }
 }

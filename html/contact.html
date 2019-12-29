@@ -87,9 +87,9 @@
         <div class="main">
             <main>
                 <section>
-                    <section id="map" clear="clear">
+                    <section id="map">
                         <h3>map</h3>
-                        <div class="clear">
+                        <div>
                             <svg viewBox="0 0 615 75" id="mysvg1">
                                 <path d="M53.408,24.184h-7.13l-1.771-9.953c-1.436-1.212-3.35-2.217-5.742-3.015c-2.393-0.797-5.168-1.196-8.326-1.196
 		c-5.009,0-8.853,1.061-11.532,3.182c-2.68,2.122-4.02,4.889-4.02,8.302c0,3.031,1.364,5.559,4.091,7.584
@@ -159,25 +159,27 @@
 		c-1.691,1.165-2.999,2.799-3.924,4.905V65.91l7.8,1.34v6.029h-25.026V67.25l7.8-1.34V28.921L579.153,27.582z" />
                             </svg>
                         </div>
-                        <div class="clear">
-                            <div class="maptext">
-                                <p>Active Endeavors</p>
-                                <div>
-                                    <p>3950 Elmore Avenue,Davenport, Iowa 52807, United States</p>
-                                    <p>1-563-441-9488</p>
-                                    <p>http://www.activeendeavors.com/</p>
+                        <div class="mapWrap">
+                            <div class="maptextDesc">
+                                <div class="maptext location">
+                                    <p>Active Endeavors</p>
+                                    <div>
+                                        <p>3950 Elmore Avenue,Davenport, Iowa 52807, United States</p>
+                                        <p>1-563-441-9488</p>
+                                        <p>http://www.activeendeavors.com/</p>
+                                    </div>
+                                </div>
+                                <div class="maptext location2">
+                                    <p>18th Amendment Barber Shop</p>
+                                    <div>
+                                        <p>77 E Cordova St, Vancouver BC V6A1K3</p>
+                                        <p>604-849-2253</p>
+                                        <p>http://18amendment.com</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="maptext">
-                                <p>18th Amendment Barber Shop</p>
-                                <div>
-                                    <p>77 E Cordova St, Vancouver BC V6A1K3</p>
-                                    <p>604-849-2253</p>
-                                    <p>http://18amendment.com</p>
-                                </div>
+                            <div class="MAP">
                             </div>
-                        </div>
-                        <div class="MAP clear">
                         </div>
                     </section>
                     <section id="mail" class="clear">
@@ -331,6 +333,33 @@
     <script>
         new Vivus('mysvg1', { duration: 60 }, function () { $('#mysvg1').attr('style', 'fill:#fff'); });
         new Vivus('mysvg2', { duration: 60 }, function () { $('#mysvg2').attr('style', 'fill:#fff'); });
+        // var address = $('.maptext');
+        // adress.each(function(){
+        //     $(this).click(function(){
+
+        //     });
+        // });
+
+        var addressDecs = $('.location');
+        var addressDecs2 = $('.location2');
+
+        addressDecs.click(function(){
+            var mapLocation = $('.MAP');
+            mapLocation.css('background-image','url(../img/contact_location.PNG)');
+        });
+
+        addressDecs2.click(function(){
+            var mapLocation = $('.MAP');
+            mapLocation.css('background-image','url(../img/contact_location2.PNG)');
+        });
+
+
+
+        function locationFind ( property,active){
+
+        }
+
+
     </script>
 
 </body>
