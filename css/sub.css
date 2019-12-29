@@ -1802,11 +1802,19 @@ iframe {
 
 /*mail*/
 .Contact #mail .banner {
+    position:relative;
     width:100%;
     height:250px;
     padding-top:34px;
-    background:url(../img/sub3-mailB.jpg)no-repeat center/cover;
-    background-attachment:fixed;
+}
+
+.Contact #mail .banner .positionFixed {
+    background-image:url(../img/sub3-mailB.jpg);
+}
+
+.Contact #mail .banner .bannerText {
+    position:absolute;
+    width:100%;
 }
 
 .Contact #mail .banner span {
