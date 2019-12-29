@@ -161,7 +161,7 @@
                         </div>
                         <div class="mapWrap">
                             <div class="maptextDesc">
-                                <div class="maptext location">
+                                <div class="location">
                                     <p>Active Endeavors</p>
                                     <div>
                                         <p>3950 Elmore Avenue,Davenport, Iowa 52807, United States</p>
@@ -169,7 +169,7 @@
                                         <p>http://www.activeendeavors.com/</p>
                                     </div>
                                 </div>
-                                <div class="maptext location2">
+                                <div class="location2">
                                     <p>18th Amendment Barber Shop</p>
                                     <div>
                                         <p>77 E Cordova St, Vancouver BC V6A1K3</p>
@@ -333,35 +333,32 @@
     <script>
         new Vivus('mysvg1', { duration: 60 }, function () { $('#mysvg1').attr('style', 'fill:#fff'); });
         new Vivus('mysvg2', { duration: 60 }, function () { $('#mysvg2').attr('style', 'fill:#fff'); });
-        // var address = $('.maptext');
-        // adress.each(function(){
-        //     $(this).click(function(){
+    
+        // var addressDecs = $('.location');
+        // var addressDecs2 = $('.location2');
 
-        //     });
+        // addressDecs.click(function(){
+        //     var mapLocation = $('.MAP');
+        //     mapLocation.css('background-image','url(../img/contact_location.PNG)');
         // });
 
-        var addressDecs = $('.location');
-        var addressDecs2 = $('.location2');
+        // addressDecs2.click(function(){
+        //     var mapLocation = $('.MAP');
+        //     mapLocation.css('background-image','url(../img/contact_location2.PNG)');
+        // });
 
-        addressDecs.click(function(){
-            var mapLocation = $('.MAP');
-            mapLocation.css('background-image','url(../img/contact_location.PNG)');
+        var maptext = $('.maptextDesc').children('div');
+        maptext.each(function(){
+            var mapPorperty = $(this);
+            mapPorperty.click(function(){
+                locationFind($(this).attr('class'));
+            });
         });
 
-        addressDecs2.click(function(){
-            var mapLocation = $('.MAP');
-            mapLocation.css('background-image','url(../img/contact_location2.PNG)');
-        });
-
-
-
-        function locationFind ( property,active){
-
+        function locationFind (active){
+            var maplocation = $('.MAP');
+            maplocation.css('background-image','url(../img/contact_'+active+'.PNG)');
         }
-
-
     </script>
-
 </body>
-
 </html>

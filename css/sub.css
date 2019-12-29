@@ -1763,7 +1763,7 @@ iframe {
     padding:0 8%;
 }
 
-.Contact #map .mapWrap .maptext {
+.Contact #map .maptextDesc> div {
     width:100%;
     padding:8%;
     font:1.5rem 'robotR';
@@ -1775,22 +1775,22 @@ iframe {
     margin-bottom:12%;
 }
 
-.Contact #map .mapWrap .maptext> p {
+.Contact #map .maptextDesc> div> p {
     margin-bottom:3%;
 }
 
-.Contact #map .mapWrap .maptext div p {
+.Contact #map .maptextDesc> div div p {
     padding-left:16%;
     font-size:1.1rem ;
     background:url(../img/icon/sub3-map-icon1.png)no-repeat 20px 50%/17px;
 }
 
-.Contact #map .mapWrap .maptext div p:nth-child(2) {
+.Contact #map .maptextDesc> div div p:nth-child(2) {
     margin:4% 0;
     background-image:url(../img/icon/sub3-map-icon2.png);
 }
 
-.Contact #map .mapWrap .maptext div p:nth-child(3) {
+.Contact #map .maptextDesc> div div p:nth-child(3) {
     background-image:url(../img/icon/sub3-map-icon3.png);
 }
 
@@ -1980,11 +1980,11 @@ iframe {
         height:72px;
     }
 
-    .Contact #map .mapWrap .maptext {
+    .Contact #map .maptextDesc> div {
         font-size:3.0rem;
     }
 
-    .Contact #map .mapWrap .maptext div p {
+    .Contact #map .maptextDesc> div div p {
         font-size:2.2rem;
         background-size:5%;
     }
@@ -2097,7 +2097,7 @@ iframe {
         padding:0;
     }
     
-    .Contact #map .mapWrap .maptext {
+    .Contact #map .maptextDesc> div {
         font-size:3.2rem;
     }
 
