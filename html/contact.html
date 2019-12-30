@@ -161,7 +161,7 @@
                         </div>
                         <div class="mapWrap">
                             <div class="maptextDesc">
-                                <div class="location">
+                                <div class="location1">
                                     <p>Active Endeavors</p>
                                     <div>
                                         <p>3950 Elmore Avenue,Davenport, Iowa 52807, United States</p>
@@ -179,6 +179,9 @@
                                 </div>
                             </div>
                             <div class="MAP">
+                                <div id="Endeavors" class="mapLocate mapLocate1"></div>
+                                <div id="Amendment" class="mapLocate mapLocate2"></div>
+                                <div class="mapLocate mapLocate3 active"></div>
                             </div>
                         </div>
                     </section>
@@ -214,7 +217,8 @@
             c1.106,0,2.222,0.09,3.345,0.269c1.123,0.179,2.368,0.432,3.735,0.757l-1.172,7.324c-0.586-0.13-1.294-0.244-2.124-0.342
             s-1.685-0.146-2.563-0.146c-2.832,0-4.932,0.838-6.299,2.515c-1.367,1.677-2.051,4.11-2.051,7.3v6.689h11.035v7.129h-11.035V71.48
             l7.959,1.367V79h-25.537v-6.152l7.959-1.367V33.297H204.302z" />
-                                    <path d="M240.776,32.369v-6.201h16.553l0.928,7.666c1.497-2.702,3.345-4.817,5.542-6.348c2.197-1.53,4.712-2.295,7.544-2.295
+                                    <path
+                                        d="M240.776,32.369v-6.201h16.553l0.928,7.666c1.497-2.702,3.345-4.817,5.542-6.348c2.197-1.53,4.712-2.295,7.544-2.295
             c0.749,0,1.521,0.057,2.319,0.171c0.797,0.114,1.408,0.236,1.831,0.366l-1.27,8.936l-5.469-0.293c-2.539,0-4.671,0.594-6.396,1.782
             c-1.726,1.188-3.06,2.856-4.004,5.005V71.48l7.959,1.367V79h-25.537v-6.152l7.959-1.367V33.736L240.776,32.369z" />
                                     <path d="M305.327,80.025c-7.357,0-13.208-2.449-17.554-7.349s-6.519-11.255-6.519-19.067v-2.148c0-7.52,2.238-13.777,6.714-18.774
@@ -241,7 +245,8 @@
             c0,5.6,1.18,10.222,3.54,13.867c2.359,3.646,5.867,5.469,10.522,5.469c4.557,0,8.023-1.822,10.4-5.469
             c2.376-3.646,3.564-8.268,3.564-13.867v-1.074c0-5.533-1.188-10.14-3.564-13.818c-2.377-3.678-5.876-5.518-10.498-5.518
             c-4.623,0-8.105,1.839-10.449,5.518c-2.344,3.679-3.516,8.285-3.516,13.818V53.17z" />
-                                    <path d="M528.276,72.848l7.959-1.367V33.736l-7.959-1.367v-6.201h16.602l0.635,6.885c1.692-2.506,3.873-4.443,6.543-5.811
+                                    <path
+                                        d="M528.276,72.848l7.959-1.367V33.736l-7.959-1.367v-6.201h16.602l0.635,6.885c1.692-2.506,3.873-4.443,6.543-5.811
             c2.669-1.367,5.762-2.051,9.277-2.051s6.534,0.814,9.058,2.441c2.522,1.628,4.419,4.069,5.688,7.324
             c1.66-2.995,3.857-5.371,6.592-7.129s5.924-2.637,9.57-2.637c5.403,0,9.668,1.848,12.793,5.542
             c3.125,3.695,4.688,9.253,4.688,16.675V71.48l7.959,1.367V79h-25.586v-6.152l7.959-1.367v-24.17c0-5.208-0.896-8.895-2.686-11.06
@@ -261,7 +266,8 @@
             H687.7V2.828h9.619V12.643z" />
                                     <path
                                         d="M711.284,9.029V2.828h17.578V71.48l7.959,1.367V79h-25.537v-6.152l7.959-1.367V10.396L711.284,9.029z" />
-                                    <path d="M767.046,72.848l7.959-1.367V33.736l-7.959-1.367v-6.201h16.602l0.635,6.885c1.692-2.506,3.873-4.443,6.543-5.811
+                                    <path
+                                        d="M767.046,72.848l7.959-1.367V33.736l-7.959-1.367v-6.201h16.602l0.635,6.885c1.692-2.506,3.873-4.443,6.543-5.811
             c2.669-1.367,5.762-2.051,9.277-2.051s6.534,0.814,9.058,2.441c2.522,1.628,4.419,4.069,5.688,7.324
             c1.66-2.995,3.857-5.371,6.592-7.129s5.924-2.637,9.57-2.637c5.403,0,9.668,1.848,12.793,5.542
             c3.125,3.695,4.688,9.253,4.688,16.675V71.48l7.959,1.367V79h-25.586v-6.152l7.959-1.367v-24.17c0-5.208-0.896-8.895-2.686-11.06
@@ -333,32 +339,55 @@
     <script>
         new Vivus('mysvg1', { duration: 60 }, function () { $('#mysvg1').attr('style', 'fill:#fff'); });
         new Vivus('mysvg2', { duration: 60 }, function () { $('#mysvg2').attr('style', 'fill:#fff'); });
-    
-        // var addressDecs = $('.location');
-        // var addressDecs2 = $('.location2');
 
-        // addressDecs.click(function(){
-        //     var mapLocation = $('.MAP');
-        //     mapLocation.css('background-image','url(../img/contact_location.PNG)');
-        // });
-
-        // addressDecs2.click(function(){
-        //     var mapLocation = $('.MAP');
-        //     mapLocation.css('background-image','url(../img/contact_location2.PNG)');
-        // });
-
-        var maptext = $('.maptextDesc').children('div');
-        maptext.each(function(){
-            var mapPorperty = $(this);
-            mapPorperty.click(function(){
-                locationFind($(this).attr('class'));
-            });
+        $('.location1').click(function () {
+            $('.mapLocate1').addClass('active');
+            $('.mapLocate2').removeClass('active');
+            $('.mapLocate3').removeClass('active');
         });
 
-        function locationFind (active){
-            var maplocation = $('.MAP');
-            maplocation.css('background-image','url(../img/contact_'+active+'.PNG)');
+        $('.location2').click(function () {
+            $('.mapLocate1').removeClass('active');
+            $('.mapLocate2').addClass('active');
+            $('.mapLocate3').removeClass('active');
+        });
+
+        var mapEndeavors;
+        var mapAmendment;
+
+        function initMap() {
+            var mapEndeavorsLatLng = { lat: 41.561391, lng: -90.527823 };
+            var mapAmendmentLatLng = { lat: 49.282548, lng: -123.102877 };
+            var zoom = 15;
+
+            mapEndeavors = new google.maps.Map(document.getElementById('Endeavors'), {
+                center: mapEndeavorsLatLng,
+                zoom: zoom
+            });
+
+            var marker = new google.maps.Marker({
+                position: mapEndeavorsLatLng,
+                map: mapEndeavors,
+                animation: google.maps.Animation.DROP,
+                title: 'Endeavors Map'
+            });
+
+            mapAmendment = new google.maps.Map(document.getElementById('Amendment'), {
+                center: mapAmendmentLatLng,
+                zoom: zoom
+            });
+
+            var marker = new google.maps.Marker({
+                position: mapAmendmentLatLng,
+                map: mapAmendment,
+                animation: google.maps.Animation.DROP,
+                title: 'Amendment Map'
+            });
         }
+
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACaaOQ8qqzfZkUqNEAmyXNqOVZgkTfncg&callback=initMap"
+        async defer></script>
 </body>
+
 </html>
