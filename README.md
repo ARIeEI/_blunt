@@ -27,7 +27,7 @@ collabo의 우산과 도형이 바람에 의해 돌아가는 모션을 표현하
     자체콘텐츠를 제작하여 브랜드의 가치를 높이고, 소통에 적극적인 모습을 보여줌.
     ```
 
-# Specification
+# Specificationddd
 * HTML
 * CSS
 * jQuery
