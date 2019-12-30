@@ -289,7 +289,6 @@ iframe {
     width:100%;
     padding-top:35px;
     margin-bottom:62px;
-    /* background-attachment:fixed; */
 }
 
 .positionabsolute {
@@ -1809,10 +1808,20 @@ iframe {
     padding-top:34px;
 }
 
-.Contact #mail .banner .positionFixed {
-    background-image:url(../img/sub3-mailB.jpg);
+.positionabsolute {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 
+.positionFixed {
+    position:fixed;
+    top:0;
+    left:0;
+    background:url(../img/sub3-mailB.jpg)no-repeat center/cover;
+}
 .Contact #mail .banner .bannerText {
     position:absolute;
     width:100%;
