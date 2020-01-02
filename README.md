@@ -1,60 +1,52 @@
-[BLUNT!](https://arieei.github.io/_blunt/index.html)
+[BLUNT!](https://arieei.github.io/_BLUNT/index.html)
 ===
 # Introduction
-평소 우산을 좋아했던 터라, blunt 라는 브랜드를 찾게 되었습니다.
-blunt 페이지를 방문했을 때, 정적인 느낌을 받았습니다.
-동적인 요소를 넣어 blunt 제품의 매력 시각적으로 표현하고자 노력했습니다.
-blunt는 여러 디자이너들과의 활발한 교류를 통한 콜라보를 진행해 오고 있습니다. 이는 끊임없이 노력하고 변화를 시도하는 blunt의 모습을 대변한다고 생각하여, 그동안 탄생한 작품들을 collabo 페이지에 모아 만들게 되었습니다.
+평소에 비오는 날씨를 좋아합니다. 그래서 당연히 우산에 관심이 많습니다.
+그래서 우산브랜드 [BLUNT Umberalla](https://bluntumbrellas.com/) 웹 사이트를 리뉴얼해 보았습니다.
+
+BLUNT 페이지를 방문했을 때, 이러이러해서 이러이러한 부분이 정적인 느낌을 받았습니다.
+
+제가 평소에 생각하는 비는 하늘에서 떨어지고 바람의 의해서 흔들리고, 굉장히 동적인 이미지입니다.
+
+그래서 리뉴얼할때 가장 중점을 둔 부분은 비의 동적인 느낌을 살리고자
+동적인 요소를 넣어 BLUNT 제품의 매력 시각적으로 표현하고자 노력했습니다.
+
+BLUNT는 여러 디자이너들과의 활발한 교류를 통한 콜라보를 진행해 오고 있습니다. 이는 끊임없이 노력하고 변화를 시도하는 BLUNT의 모습을 대변한다고 생각하여, 그동안 탄생한 작품들을 collabo 페이지에 모아 만들게 되었습니다.
 
 # Requirements
-* blunt페이지는 Chrome Browser를 권장합니다.
+* BLUNT 페이지는 Chrome Browser를 권장합니다.
 
 # Feature
 우산과 연관이 되는 '비'와 '바람'을 컨셉으로 디자인과 구성을 잡았습니다. 나뭇잎과 풀은 비를 맞아 움직이는 모션을 표현하였습니다.
 collabo의 우산과 도형이 바람에 의해 돌아가는 모션을 표현하였습니다.
 
-* 시각적인 효과
-    ```
-    hover 사용.
-    SVG을 이용한, animation 효과.
-    Vivus를 사용.
-    AboutUs 페이지의 이미시 슬라이드를 사용하여, blunt 제품의 이미지 노출.
-    ```
-* blunt 자체 콘텐츠를 사용하여, 사용자들에게 정보 전달.
-    ```
-    blunt는 다양한 분야에서 자신들의 브랜드를 홍보하고 자함.
-    기술력과 디자인을 고려하는 회사의 모습을 직접적으로 제공.
-    자체콘텐츠를 제작하여 브랜드의 가치를 높이고, 소통에 적극적인 모습을 보여줌.
-    ```
-
+- hover animation.
+- SVG animation([Vivus](https://maxwellito.github.io/vivus/)).
+- image slide([slick](https://kenwheeler.github.io/slick/))
+- image fadein fadeout animation(AboutUs page)
+- [google map api](https://developers.google.com/maps/documentation/javascript/tutorial?hl=ko)를 이용한 지도 표현
+    
 # Specification
-* HTML
+* HTML5
 * CSS
+* javascript
 * jQuery
+* 반응형 레이아웃
 
 # Challenges
-* 네비게이션 1개의 마크업으로 모바일,웹 반응으로 구현하고자 했습니다.
-    ```
-    초반에는 header에 '.open'을 붙여 메뉴가 나오도록 했습니다.
-    pc분기에서는 정상적으로 작동되었으나, 모바일로 넘어가면서 removeClass가 적용되어 메뉴가 사라지는 문제가 발생했습니다.
-    오류를 해결하기 위해, 모바일분기에서 'navWrap'에 '.open'을,
-    pc 분기에서는 'header'에 open 을 붙여문제를 해결하였습니다.
-    ```
+* google map api 사용
+    * 지도를 사용해본적이 없어서 조금은 힘들었지만 해당 문서의 샘플코드를 이해하고 반영해보니 생각보다 쉽게 적용되었습니다.
+
 * scroll 이벤트를 이용한, pallax 코드를 하나의 함수로 리펙토링하였습니다.
 위 과정을 아래문서에 상세히 설명하여 아래 링크를 올립니다.
-
-    [리펙토링하는 과정](https://github.com/ARIeEI/TIL-/blob/master/blunt_parallax.md)
-
-* contact페이지의 2개의 지도 박스를 각각 클릭 했을 때, 이미지 공간에 주소와 맞는 지도이미지가 나오도록 하였습니다.
-    ```
-    1. 함수를 만들어, 지도 이미지 부분에 css()를 사용하여, 해당 이미지를 노촐하도록 하였습니다.
-    2. 주소 박스의 class명과 지도 이미지 파일 명을 동일하게 주었습니다.
-    3. 클릭한 주소 박스의 class 를 attr을 이용하여 함수에 인자로 사용하여 작동시켰습니다.
-    ```
+    *  [리펙토링하는 과정](https://github.com/ARIeEI/TIL-/blob/master/BLUNT_parallax.md)
 
 # Things to do
  개인이 발전 시켜야할 부분이지만, 구현할 수 있는 기능들이 한정적인 부분이 많이 아쉬웠습니다.
- absout us 페이지의 artist 부분의 슬리이드가 바뀌는 동작을 fade가 아닌 위로 올라가면서 바뀌는 동작으로 변경하고 싶습니다.
 
-# 오리지널 BLUNT 페이지
-[BLUNTUmberalla](https://bluntumbrellas.com/)
+- 변수명 클래스명 전체적인 이름이 뒤죽박죽 BEM 스타일로 변경 고려
+- 동적인 컨셉이라 레이아웃 기준 느슨하게 잡고 작업하여 유지보수가 힘들었음(박스레이아웃으로 기준을 잡고 그안에서 자유로운 레이아웃표현)
+- css selector 사용 기준 불분명(class와 ID, Tag의 혼재)
+
+# BLUNT 리뉴얼 페이지 링크
+[https://arieei.github.io/_BLUNT/index.html](https://arieei.github.io/_BLUNT/index.html)
