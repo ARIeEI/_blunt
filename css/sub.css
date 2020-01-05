@@ -1921,7 +1921,7 @@ iframe {
     height:40px;
 }
 
-.Contact #mail .memo .button a {
+.Contact #mail .memo .button button {
     display:inline-block;
     position:relative;
     top:0;
@@ -1935,7 +1935,7 @@ iframe {
     transition:all .2s;
 }
 
-.Contact #mail .memo .button a span {
+.Contact #mail .memo .button button span {
     display:inline-block;
     position:absolute;
     margin-top:-12px;
@@ -2055,11 +2055,11 @@ iframe {
         height:60px;
     }
     
-    .Contact #mail .memo .button a {
+    .Contact #mail .memo .button button {
         font-size:3.0rem;
     }
     
-    .Contact #mail .memo .button a span {
+    .Contact #mail .memo .button button span {
         margin-top:-25px;
         width:50px;
         height:50px;

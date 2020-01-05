@@ -6,7 +6,7 @@
     <title>blunt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/logo/logo_32x32.png">
-    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../img/logo/logo_400x400.png"> -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo/logo_400x400.png">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/sub.css" />
@@ -286,22 +286,23 @@
                             </div>
                         </div>
                         <div class="memo">
-                            <fieldset>
-                                <label>name</label><br />
-                                <input class="nameBox" type="text" />
-                                <input class="nameBox Right clear" type="text" />
-                                <label>e-mail</label>
-                                <input type="text" />
-                                <label>adress</label>
-                                <input type="text" />
-                                <label>note</label>
-                                <textarea cols="50" rows="10"></textarea>
-
-                                <div class="button clear">
-                                    <a href="#">Sand a Message<span></span>
-                                    </a>
-                                </div>
-                            </fieldset>
+                            <form>
+                                <fieldset>
+                                    <label for="name">name</label><br />
+                                    <input id="name" class="nameBox" type="text" />
+                                    <input id="name" class="nameBox Right clear" type="text" />
+                                    <label for="e-mail">e-mail</label>
+                                    <input id="email" type="email" />
+                                    <label for="address">address</label>
+                                    <input id="address" type="text" />
+                                    <label for="note">note</label>
+                                    <textarea id="note" cols="50" rows="10"></textarea>
+                                    <div class="button clear">
+                                        <button type="submit">Sand a Message<span></span>
+                                        </button>
+                                    </div>
+                                </fieldset>
+                            </form>
                         </div>
                     </section>
                 </section>
