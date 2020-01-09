@@ -1,4 +1,4 @@
-[BLUNT!](https://arieei.github.io/_BLUNT/index.html)
+[BLUNT!](https://arieei.github.io/_blunt)
 ===
 # Introduction
 평소에 비오는 날씨를 좋아합니다. 우산에도 관심이 많았고, 
