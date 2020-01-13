@@ -285,6 +285,8 @@ iframe {
 
 .aboutUs .warranty .bgText {
     position:relative;
+    top:0;
+    left:0;
     height:230px;
     width:100%;
     padding-top:35px;
@@ -301,19 +303,19 @@ iframe {
 }
 
 .positionFixed {
-    background:url(../img/blunt-slide5.jpg)no-repeat center/cover;
-    position:fixed;
     display:block;
+    position:fixed;
     top:0;
     left:0;
     width:100%;
     height:100%;
-    background-size:cover;
-    background-position:center;
+    background:url(../img/blunt-slide5.jpg) center/100%;
 }
 
 .warrantyText {
     position:absolute;
+    top:0;
+    left:0;
     width:100%;
 }
 
@@ -1836,7 +1838,7 @@ iframe {
 }
 
 .Contact #mail .banner .positionFixed {
-    background:url(../img/sub3-mailB.jpg)no-repeat center/cover;
+    background:url(../img/sub3-mailB.jpg) center/cover;
 }
 
 .Contact #mail .banner .bannerText {
