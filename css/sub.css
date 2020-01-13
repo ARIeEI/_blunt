@@ -287,7 +287,7 @@ iframe {
     position:relative;
     top:0;
     left:0;
-    height:230px;
+    height:250px;
     width:100%;
     padding-top:35px;
     margin-bottom:62px;
@@ -299,7 +299,7 @@ iframe {
     top:0;
     left:0;
     width:100%;
-    height:100%;
+    height:250px;
 }
 
 .positionFixed {
@@ -309,12 +309,12 @@ iframe {
     left:0;
     width:100%;
     height:100%;
-    background:url(../img/blunt-slide5.jpg) center/100%;
+    background:url(../img/blunt-slide5.jpg) center/cover;
 }
 
 .warrantyText {
     position:absolute;
-    top:0;
+    top:20;
     left:0;
     width:100%;
 }
@@ -636,6 +636,11 @@ iframe {
         height:460px;
         padding-top:100px;
     }
+
+    .positionabsolute {
+        height:460px;
+    }
+    
     
     .aboutUs .warranty .bgText p:first-child {
         font-size:5.4rem;
@@ -714,6 +719,14 @@ iframe {
         width:377px;
         bottom:430px;
         left:-239px;
+    }
+
+    .aboutUs .warranty .bgText {
+        height:500px;
+    }
+
+    .positionabsolute {
+        height:500px;
     }
 
     /*#mysvg1*/
@@ -1837,6 +1850,11 @@ iframe {
     padding-top:34px;
 }
 
+.Contact #mail .banner .positionabsolute {
+    height:250px;
+}
+
+
 .Contact #mail .banner .positionFixed {
     background:url(../img/sub3-mailB.jpg) center/cover;
 }
@@ -2022,6 +2040,11 @@ iframe {
         height:337px;
         padding-top:50px;
     }
+
+    .Contact #mail .banner .positionabsolute {
+        height:337px;
+    }
+    
     
     .Contact #mail .banner svg {
         height:46px;
